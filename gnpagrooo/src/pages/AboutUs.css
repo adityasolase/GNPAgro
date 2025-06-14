@@ -1,0 +1,211 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* About Page Container */
+.about-page {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Header Section with Background Image */
+.about-header {
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-overlay h1 {
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* Container for About and Products sections */
+.about-container {
+    display: flex;
+    justify-content: space-between; /* Align items on the same line */
+    width: 100%;
+    max-width: 1200px; /* Set a max width for better layout */
+    gap: 20px; /* Space between the sections */
+}
+
+/* Section Styling */
+.about-section,
+.products-section,
+.vision-section,
+.mission-section {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings Styling */
+.about-section h1,
+.products-section h2,
+.vision-section h2,
+.mission-section h2 {
+    color: #2b572c;
+    margin-bottom: 15px;
+    font-size: 2rem; /* Use rem for responsiveness */
+}
+
+/* Text Styling */
+.about-section p,
+.vision-section p,
+.mission-section p {
+    font-size: 1.1rem; /* Adjust for responsiveness */
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Product List Styling */
+.products-section ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding-left: 0; /* Remove left padding */
+}
+
+.products-section li {
+    font-size: 1.3rem; /* Increase font size */
+    color: #333;
+    margin-bottom: 10px; /* Small gap between items */
+    text-transform: uppercase; /* Capitalize the text */
+    display: flex; /* Use flex to align logo and text */
+    align-items: center; /* Center vertically */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.products-section li:hover {
+    background-color: #e7f3e7; /* Change background on hover */
+    transform: scale(1.02); /* Slightly scale the item */
+}
+
+/* Logo Styling */
+.leaf-logo {
+    width: 30px; /* Increase size of the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between logo and text */
+}
+
+/* Container for Vision and Mission sections */
+.vision-mission-container {
+    display: flex;
+    justify-content: space-between; /* Align items on the same line */
+    width: 100%;
+    max-width: 1200px; /* Set a max width for better layout */
+    gap: 20px; /* Space between the sections */
+}
+
+/* Certified By Section */
+.certified-section {
+    background-color: #f5f5f5; /* Slightly different background for contrast */
+    padding: 20px 40px;
+    width: 100%;
+    max-width: 1200px; /* Set a max width for better layout */
+    border-radius: 8px;
+    text-align: center; /* Center the text */
+}
+
+.certified-section h2 {
+    color: #2b572c;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+/* Certified Images Layout */
+.certified-images {
+    display: flex;
+    justify-content: space-between; /* Space out the images evenly */
+    align-items: stretch; /* Stretch items to equal heights */
+    gap: 20px; /* Space between items */
+}
+
+.certified-item {
+    flex: 1; /* Make items flexible */
+    margin: 0; /* Remove margins */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    padding: 20px; /* Add padding for better spacing */
+    background-color: #ffffff; /* Background color for the boxes */
+    border-radius: 8px; /* Round the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+/* Ensure images are responsive and centered */
+.certified-item img {
+    max-width: 80%; /* Limit the image width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.video-section {
+    width: 100%;
+    max-width: 1200px; /* Set a max width for the video */
+    margin: 20px auto; /* Center the section */
+    padding: 20px;
+    text-align: center; /* Center the text */
+}
+
+.video-section h2 {
+    color: #2b572c;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.video-section iframe {
+    width: 100%; /* Make the iframe responsive */
+    height: 515px; /* Fixed height for the iframe */
+    border-radius: 8px; /* Optional: round the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .about-container,
+    .vision-mission-container {
+        flex-direction: column; /* Stack items vertically */
+        gap: 20px;
+    }
+
+    .certified-images {
+        flex-direction: column; /* Stack images vertically */
+    }
+
+    .header-overlay h1 {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+
+    .about-section,
+    .products-section,
+    .vision-section,
+    .mission-section,
+    .certified-section {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+}

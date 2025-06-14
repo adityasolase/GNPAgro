@@ -1,0 +1,114 @@
+/* Footer Styling */
+.footer {
+    background-color: #f8f9fa; /* Light gray for a professional look */
+    color: #343a40; /* Dark gray for text */
+    padding: 40px 20px;
+    border-top: 1px solid #dee2e6; /* Subtle border for separation */
+  }
+  
+  /* Footer Top Section */
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+    text-align: center; /* Center-align text and icons */
+  }
+  
+  /* Section Headings */
+  .footer-section h3 {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    color: #007bff; /* Professional blue for headings */
+  }
+  
+  /* About Section */
+  .footer-section p {
+    margin: 0;
+    line-height: 1.6;
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+  
+  /* Quick Links */
+  .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    text-decoration: none;
+    color: #343a40;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #007bff; /* Blue color on hover */
+  }
+  
+  /* Contact Information */
+  .footer-section a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Follow Us Icons */
+  .social-icons {
+    display: flex;
+    justify-content: center; /* Center align icons */
+    gap: 15px;
+    margin-top: 10px; /* Space between text and icons */
+  }
+  
+  .social-icons a {
+    font-size: 1.5rem; /* Larger icon size */
+    color: #495057; /* Neutral gray for icons */
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #007bff; /* Blue on hover */
+  }
+  
+  /* Footer Bottom Section */
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #dee2e6; /* Divider for the bottom section */
+  }
+  
+  .footer-bottom p {
+    font-size: 0.9rem;
+    color: #6c757d; /* Muted gray for copyright text */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-top {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-section {
+      margin: 20px 0;
+    }
+  
+    .social-icons {
+      justify-content: center; /* Ensures icons remain centered on smaller screens */
+    }
+  }
+  

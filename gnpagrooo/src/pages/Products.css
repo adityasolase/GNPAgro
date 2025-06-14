@@ -1,0 +1,179 @@
+/* Products.css */
+.product-page {
+    font-family: 'Arial', sans-serif;
+    padding: 20px; /* Adjusted padding for smaller screens */
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+/* Category Options Styling */
+.category-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.category-button {
+    margin: 10px 0;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.category-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* New Category Boxes Styling */
+.category-boxes {
+    display: flex;
+    flex-wrap: wrap; /* Allow boxes to wrap to the next line */
+    justify-content: center; /* Center the boxes */
+    gap: 20px; /* Space between boxes */
+    max-width: 800px; /* Adjust the maximum width to control layout */
+    margin: 0 auto; /* Center the boxes container */
+}
+
+.category-box {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    flex: 1 1 200px; /* Allow boxes to grow and shrink, with a minimum width */
+    max-width: calc(33.33% - 20px); /* Max width for three boxes per row */
+    text-align: center;
+    transition: transform 0.3s;
+    cursor: pointer; /* Change cursor to pointer on hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+}
+
+.category-box:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.category-logo {
+    width: 80%; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Product List Styling */
+.product-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Product Card Styling */
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1 1 200px; /* Allow cards to grow and shrink, with a minimum width */
+    max-width: 250px; /* Max width for product cards */
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.add-to-cart {
+    background-color: #ffa500; /* Orange for Add to Cart */
+    color: white;
+}
+
+.buy-now {
+    background-color: #28a745; /* Green for Buy Now */
+}
+
+/* Products.css */
+.go-back {
+    margin: 20px 0;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.go-back:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Pop-up message styling */
+.pop-up-message {
+    position: fixed;
+    top: 20px; /* Adjust to desired position */
+    right: 20px;
+    background-color: #28a745; /* Green background for success */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.pop-up-message.show {
+    opacity: 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .product-page {
+        padding: 10px; /* Reduced padding on smaller screens */
+    }
+
+    .category-box {
+        flex: 1 1 45%; /* Two boxes per row on small screens */
+        max-width: none; /* Remove max width for flexibility */
+    }
+
+    .product-card {
+        flex: 1 1 100%; /* Full width cards on small screens */
+        max-width: 100%; /* Remove max width */
+    }
+}
+
+@media (max-width: 480px) {
+    .category-box {
+        flex: 1 1 100%; /* One box per row on very small screens */
+    }
+
+    .btn {
+        font-size: 0.9em; /* Slightly smaller buttons */
+    }
+}

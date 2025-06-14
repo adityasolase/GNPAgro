@@ -1,0 +1,45 @@
+/* src/pages/ProductDetails.css */
+.product-details {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-description {
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+.price {
+    font-size: 20px;
+    color: #333;
+}
+
+/* Enquire button styles */
+.enquire-button {
+    padding: 10px 15px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.enquire-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.product-not-found {
+    text-align: center;
+    font-size: 18px;
+}

@@ -1,0 +1,108 @@
+/* src/pages/Cart.css */
+
+.cart-page {
+    display: flex;
+    flex-direction: column; /* Arrange children in a column */
+    align-items: center; /* Center everything horizontally */
+    padding: 20px;
+    min-height: 100vh; /* Full viewport height for centered appearance */
+}
+
+.cart-container {
+    max-width: 800px; /* Centered and fixed width */
+    width: 100%;
+    margin: 20px auto; /* Center container and add margin from top */
+}
+
+.cart-list {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space out item components */
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item-image {
+    width: 80px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.cart-item-info {
+    flex: 1; /* Allow the info section to grow */
+    margin: 0 10px; /* Add margin for spacing */
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-controls button {
+    padding: 5px 10px;
+}
+
+.remove-button {
+    padding: 5px 10px;
+    background-color: #e74c3c; /* Red color for Remove button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buy-now {
+    padding: 5px 10px;
+    background-color: #28a745; /* Green color for Buy Now button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-actions {
+    display: flex;
+    justify-content: center; /* Center "Clear Cart" and "Buy All" buttons */
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.clear-cart,
+.buy-all {
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.clear-cart {
+    background-color: #ff0000; /* Red color for Clear Cart button */
+}
+
+.buy-all {
+    background-color: #007bff; /* Blue color for Buy All button */
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .cart-item {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align items to the left */
+    }
+    
+    .quantity-controls {
+        margin-top: 10px; /* Add margin on top for spacing */
+    }
+    
+    .cart-actions {
+        flex-direction: column; /* Stack action buttons */
+    }
+}

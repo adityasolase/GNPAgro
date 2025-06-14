@@ -1,0 +1,16 @@
+/* src/pages/Home.css */
+.home {
+    position: relative; /* Set relative positioning for child elements */
+}
+
+.time-watch {
+    position: absolute; /* Absolute positioning */
+    top: 20px; /* Adjust distance from the top */
+    right: 20px; /* Adjust distance from the right */
+     /* Optional: semi-transparent background */
+    color: white; /* Text color */
+    padding: 10px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Adjust font size */
+    z-index: 10; /* Make sure it's above other elements */
+}
