@@ -4,7 +4,7 @@
 }
 
 .contact-header {
-  background-image: url('C:/Users/patil/OneDrive/Desktop/GNP_AGROO/gnpagrooo/src/assets/images/slide1.jpg'); /* Replace with your background image path */
+  background-image: url('../assets/images/slide1.jpg'); 
   background-size: cover;
   background-position: center;
   height: 400px;
